@@ -1,13 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Vlog</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/welcome.css">
+	<link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
+<header id="main_nav" class="clearfix">
+ 		<a href="#" class="name">Derek Yepes</a>
+ 		<nav>
+ 		<%= link_to "Articles", posts_path %>
+        <a href="#">Projects</a>
+        <a href="contact.html">Contact</a>
+
+
+
+ 		</nav>
+
+
+ 	</header>
 <%= yield %>
 
 </body>
